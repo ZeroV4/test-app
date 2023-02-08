@@ -5,17 +5,17 @@
 
 
 <?php
-$elev = array("Rusu Dan", "Pocitaru Constantin", "Zuza Marius");
+$elev = array("Popa Vadim", "Pocitaru Constantin", "Rusu Dan", "Plastelin Daniel");
 $summa = 0;
 ?>
 
 @foreach($elev as $key =>$value)
     
-@if ($value == "Rusu Dan")
-Nota Zece
+@if ($value == "Popa Vadim")
+10
 
 @else
-Nota opt
+9
 @endif
 
 @endforeach
