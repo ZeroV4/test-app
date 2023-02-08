@@ -1,12 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-</head>
-<body>
+@extends("layouts")
+
+@section("content")
     <h1>Home</h1>
-</body>
-</html>
+
+
+<?php
+$elev = array("Rusu Dan", "Pocitaru Constantin", "Zuza Marius");
+$summa = 0;
+?>
+
+@foreach($elev as $key =>$value)
+    
+@if ($value == "Rusu Dan")
+Nota Zece
+
+@else
+Nota opt
+@endif
+
+@endforeach
+<br>
+@for($i=0; $i < 100; $i++)
+
+@if ($i % 2 == 0)
+@php
+$summa = $summa +$i
+@endphp
+
+@endif
+@endfor
+
+
+Suma este {{$summa}}
+
+@endsection
