@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +33,7 @@ Route::get('/about', function () {
 Route::get('/home', function () {
     return view('home');
 });
+
+Route::get('/test', [
+    TestController::class, 'test'
+]);

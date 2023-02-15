@@ -2,7 +2,8 @@
 
 @section("content")
     <h1>Home</h1>
-
+    <button class="btn btn-danger">CEITI CRINGE</button>
+    <br>
 
 <?php
 $elev = array("Popa Vadim", "Pocitaru Constantin", "Rusu Dan", "Plastelin Daniel");
