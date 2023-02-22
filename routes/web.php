@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,4 +37,13 @@ Route::get('/home', function () {
 
 Route::get('/test', [
     TestController::class, 'test'
+]);
+
+
+Route::get('/articles', [
+    ArticleController::class, 'article'
+]);
+
+Route::get('/articles/{id}', [
+    ArticleController::class, 'article'
 ]);

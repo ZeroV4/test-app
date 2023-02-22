@@ -7,6 +7,7 @@ export default defineConfig({
             input: [
                 "resources/css/app.css",
                 "resources/scss/style.scss",
+                "resources/scss/jambotron.scss",
                 "resources/js/app.js",
             ],
             refresh: true,
