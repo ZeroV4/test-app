@@ -3,23 +3,22 @@
 <main>
   <div class="container py-4">
     <header class="pb-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-        <span class="fs-4">Jumbotron example: article {{$id ? ':' : ''}}</span>
+      <a href={{$article->id}} class="d-flex align-items-center text-dark text-decoration-none">
+        <span class="fs-4">ID : {{$article->id}}</span>
       </a>
     </header>
-
     <div class="p-5 mb-4 bg-light rounded-3">
       <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+        <h1 class="display-5 fw-bold">{{$article->title}}</h1>
+        <p class="col-md-8 fs-4">{{$article->description}}</p>
+        <p class="col-md-8 fs-4">{{$article->content}}</p>
       </div>
     </div>
 
     <div class="row align-items-md-stretch">
       <div class="col-md-6">
         <div class="h-100 p-5 text-bg-dark rounded-3">
-          <h2>Change the background</h2>
+          <h2>Previous Article</h2>
           <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
           <button class="btn btn-outline-light" type="button">Example button</button>
         </div>
@@ -32,10 +31,6 @@
         </div>
       </div>
     </div>
-
-    <footer class="pt-3 mt-4 text-muted border-top">
-      &copy; 2022
-    </footer>
   </div>
 </main>
 @stop
