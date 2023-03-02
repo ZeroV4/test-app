@@ -9,9 +9,8 @@ class ArticleController extends Controller
 {
     
     public function article(Request $request) {
-        $id = $request->route('id');
-        $article = DB::table('articles')->where('id', $id)->first();
+        $articles = DB::table('articles')->get();
 
-        return View("articles.index", ['id' => $id, 'article' => $article]);
+        return View("articles.index", ['articles' => $articles]);
     }
 }
