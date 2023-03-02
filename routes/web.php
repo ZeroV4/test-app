@@ -44,6 +44,6 @@ Route::get('/articles', [
     ArticleController::class, 'article'
 ]);
 
-Route::get('/articles/{id}', [
-    ArticleController::class, 'article'
+Route::get('/articles/article/{id}', [
+    ArticleController::class, 'show'
 ]);

@@ -21,7 +21,7 @@
         <div class="h-100 p-5 text-bg-dark rounded-3">
           <h2>{{$article->title}}</h2>
           <p>{{$article->description}}</p>
-          <button class="btn btn-outline-light" type="button">Read more</button>
+          <a class="btn btn-outline-light" href="articles/article/{{$article->id}}">Read more</a>
         </div>
       </div>
       @endforeach
